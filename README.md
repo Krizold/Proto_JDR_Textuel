@@ -1,4 +1,4 @@
-# # Jeu de rôle textuel
+# Jeu de rôle textuel
 
 ## Description du projet
 
