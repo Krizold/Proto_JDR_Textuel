@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeux de rôle textuel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="class-selection">
+        <h2>Choisissez votre classe</h2>
+        <label for="nom">Entrez votre nom :</label>
+        <input type="text" id="nom">
+        <br>
+        <button onclick="selectClass('Guerrier')">Guerrier</button>
+        <button onclick="selectClass('Archer')">Archer</button>
+        <button onclick="selectClass('Voleur')">Voleur</button>
+        <button onclick="selectClass('Mage')">Mage</button>
+    </div>
+
+    <div id="game" style="display:none;">
+        <h2 id="character-name"></h2>
+        <div id="stats"></div>
+        <p>
+            <button onclick="goLeft()">Gauche</button>
+            <button onclick="goStraight()">Tout droit</button>
+            <button onclick="goRight()">Droite</button>
+        </p>
+        <div id="message"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
